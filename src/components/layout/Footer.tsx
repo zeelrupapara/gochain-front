@@ -2,6 +2,8 @@ import { Blocks, Github, Globe, Mail, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm mt-auto">
       <div className="container mx-auto px-4 py-8">
@@ -13,8 +15,8 @@ export const Footer = () => {
               <span className="text-lg font-bold text-gradient">ChainGo</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              ChainGo is a modern, developer-focused blockchain dashboard providing 
-              real-time insights into your blockchain network. Monitor blocks, 
+              ChainGo is a modern, developer-focused blockchain dashboard providing
+              real-time insights into your blockchain network. Monitor blocks,
               transactions, mining operations, and network health with an intuitive interface.
             </p>
             <div className="flex gap-3">
@@ -128,7 +130,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
             <div className="flex flex-col items-center md:items-start gap-2">
               <p className="text-xs text-muted-foreground">
-                © 2024 ChainGo. All rights reserved.
+                © {currentYear} ChainGo. All rights reserved.
               </p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-muted-foreground">Developed by</span>
