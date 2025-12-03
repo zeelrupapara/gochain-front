@@ -1,4 +1,4 @@
-import { Blocks, Github, Globe, Mail, Linkedin } from "lucide-react";
+import { Blocks, Github, Globe, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -30,20 +30,13 @@ export const Footer = () => {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/in/jeel-rupapara-79377a16a"
+                href="https://www.upwork.com/freelancers/~0122232418cbabcf61"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                title="LinkedIn"
+                title="Upwork Profile"
               >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="mailto:zeelrupapara@gmail.com"
-                className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                title="Email"
-              >
-                <Mail className="w-4 h-4" />
+                <Briefcase className="w-4 h-4" />
               </a>
               <a
                 href="https://github.com/zeelrupapara/gochain-front"
@@ -105,10 +98,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:zeelrupapara@gmail.com"
+                  href="https://www.upwork.com/freelancers/~0122232418cbabcf61"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Contact Support
+                  Hire on Upwork
                 </a>
               </li>
               <li>
@@ -134,15 +129,14 @@ export const Footer = () => {
               </p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-muted-foreground">Developed by</span>
-                <span className="text-primary font-semibold">Jeel Rupapara</span>
-                <span className="text-muted-foreground">•</span>
                 <a
-                  href="mailto:zeelrupapara@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                  title="Email Jeel"
+                  href="https://www.upwork.com/freelancers/~0122232418cbabcf61"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold hover:text-primary/80 transition-colors"
+                  title="Hire Jeel on Upwork"
                 >
-                  <Mail className="w-3 h-3" />
-                  <span>zeelrupapara@gmail.com</span>
+                  Jeel Rupapara
                 </a>
               </div>
             </div>
