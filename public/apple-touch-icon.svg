@@ -1,0 +1,29 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="180" height="180" rx="40" fill="url(#appleIconGradient)"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="appleIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Chain blocks icon -->
+  <!-- Block 1 -->
+  <rect x="40" y="50" width="40" height="40" rx="8" fill="none" stroke="white" stroke-width="7"/>
+
+  <!-- Block 2 -->
+  <rect x="70" y="90" width="40" height="40" rx="8" fill="none" stroke="white" stroke-width="7"/>
+
+  <!-- Block 3 -->
+  <rect x="100" y="50" width="40" height="40" rx="8" fill="none" stroke="white" stroke-width="7"/>
+
+  <!-- Connection lines -->
+  <line x1="60" y1="90" x2="70" y2="105" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="70" x2="90" y2="90" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Center highlight dot -->
+  <circle cx="90" cy="70" r="5" fill="white"/>
+</svg>

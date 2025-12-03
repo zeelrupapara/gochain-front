@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="32" height="32" rx="6" fill="url(#faviconGradient)"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Simplified chain blocks icon -->
+  <!-- Block 1 -->
+  <rect x="6" y="8" width="7" height="7" rx="1.5" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- Block 2 -->
+  <rect x="12.5" y="17" width="7" height="7" rx="1.5" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- Block 3 -->
+  <rect x="19" y="8" width="7" height="7" rx="1.5" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- Connection lines -->
+  <line x1="9.5" y1="15" x2="12.5" y2="20" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="19" y1="11.5" x2="16" y2="17" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Center highlight dot -->
+  <circle cx="16" cy="11.5" r="1" fill="white"/>
+</svg>
