@@ -1,4 +1,4 @@
-import { Blocks, Github, Twitter, Globe } from "lucide-react";
+import { Blocks, Github, Twitter, Globe, Mail, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -19,20 +19,27 @@ export const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://github.com/zeelrupapara"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
+                title="GitHub"
               >
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="mailto:jeelrupapara@gmail.com"
                 className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
+                title="Email"
               >
-                <Twitter className="w-4 h-4" />
+                <Mail className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://github.com/zeelrupapara/gochain-front"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
+                title="Project Repository"
               >
                 <Globe className="w-4 h-4" />
               </a>
@@ -65,37 +72,77 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Resources</h4>
             <ul className="space-y-2">
-              {[
-                { label: "Documentation", href: "#" },
-                { label: "API Reference", href: "#" },
-                { label: "GitHub", href: "#" },
-                { label: "Support", href: "#" },
-              ].map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="https://github.com/zeelrupapara/gochain-front"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  GitHub Repository
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/zeelrupapara/gochain-front/blob/main/README.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:jeelrupapara@gmail.com"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Contact Support
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/zeelrupapara"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Developer Profile
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">
-            © 2024 ChainGo. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            <span className="text-xs text-muted-foreground">
-              Network: <span className="text-primary font-mono">Mainnet</span>
-            </span>
-            <span className="text-xs text-muted-foreground">
-              Version: <span className="text-primary font-mono">v1.0.0</span>
-            </span>
+        <div className="mt-8 pt-6 border-t border-border/50">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <p className="text-xs text-muted-foreground">
+                © 2024 ChainGo. All rights reserved.
+              </p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-muted-foreground">Developed by</span>
+                <span className="text-primary font-semibold">Jeel Rupapara</span>
+                <span className="text-muted-foreground">•</span>
+                <a
+                  href="mailto:jeelrupapara@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+                  title="Email Jeel"
+                >
+                  <Mail className="w-3 h-3" />
+                  <span>jeelrupapara@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-muted-foreground">
+                Network: <span className="text-primary font-mono">Mainnet</span>
+              </span>
+              <span className="text-xs text-muted-foreground">
+                Version: <span className="text-primary font-mono">v1.0.0</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
