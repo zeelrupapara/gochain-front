@@ -1,4 +1,4 @@
-import { Blocks, Github, Globe, Briefcase } from "lucide-react";
+import { Blocks, Github, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -21,15 +21,6 @@ export const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://github.com/zeelrupapara"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                title="GitHub"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-              <a
                 href="https://www.upwork.com/freelancers/~0122232418cbabcf61"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,9 +34,9 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                title="Project Repository"
+                title="View Source Code"
               >
-                <Globe className="w-4 h-4" />
+                <Github className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -104,16 +95,6 @@ export const Footer = () => {
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   Hire on Upwork
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/zeelrupapara"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Developer Profile
                 </a>
               </li>
             </ul>
